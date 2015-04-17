@@ -15,4 +15,20 @@ describe('pizza', function() {
       expect(testPizza.price).to.equal(12);
     });
   });
+
+  describe('init', function() {
+    it('returns a price for a cheese pizza, regardless if another pizza object prototype was created for pepperoni', function() {
+      var testPizza1 = Object.create(pizza);
+      testPizza1.init();
+      var testPizza2 = Object.create(pizza);
+      testPizza2.init();
+
+      testPizza1.topping = 0;
+      testPizza1.cost();
+      testPizza2.topping = 2;
+      testPizza2.cost();
+
+      expect(testPizza1.price).to.equal(10);
+    });
+  });
 });
