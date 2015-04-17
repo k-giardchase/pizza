@@ -1,24 +1,29 @@
 <html>
 <head>
+  <link href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' rel='stylesheet'>
+  <link href='css/styles.css' rel='stylesheet'>
   <title>Leonardo's Pizza</title>
 </head>
 <body>
-  <h1>Welcome to Leonardo's Pizza</h1>
+  <div class='container text-center'>
+    <h1>Welcome to Leonardo's Pizza</h1>
 
-  <h2>Order a Pizza</h2>
+    <h2>Order a Pizza</h2>
 
-  <form id='pizza'>
-    <div class='form-group'>
-      <select id='topping'>
-        <option value=0>Cheese</option>
-        <option value=2>Pepperoni</option>
-      </select>
+    <form id='pizza'>
+      <div class='form-group'>
+        <select id='topping'>
+          <option value=0>Cheese</option>
+          <option value=2>Pepperoni</option>
+        </select>
+      </div>
+      <button type='submit' class='btn btn-warning'>Order</button>
+    </form>
+
+    <div id='order_confirmation'>
+      <h2>Thanks for your order.</h2>
+      <h3>The cost for that pie will be: $<span class='total'></span><h3>
     </div>
-  </form>
-
-  <div id='order-confirmation'>
-    <h2>Thanks for your order.</h2>
-    <h3>The cost for that pie will be: $<span class='total'></span><h3>
   </div>
 </body>
 </html>
