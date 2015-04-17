@@ -17,7 +17,7 @@ describe('pizza', function() {
   });
 
   describe('init', function() {
-    it('returns a price for a cheese pizza, regardless if another pizza object prototype was created for pepperoni', function() {
+    it('returns a price for a cheese pizza, regardless if another pizza was created for pepperoni', function() {
       var testPizza1 = Object.create(pizza);
       testPizza1.init();
       var testPizza2 = Object.create(pizza);
