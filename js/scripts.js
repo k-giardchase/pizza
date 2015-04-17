@@ -9,3 +9,20 @@ var pizza = {
     this.price = 0;
   }
 };
+debugger;
+
+$(document).ready(function() {
+  $('form#pizza').submit(function(event) {
+    event.preventDefault();
+
+    var inputtedTopping = parseInt($('select#topping').val());
+
+    var newPizza = Object.create(pizza);
+    newPizza.init();
+    newPizza.topping = inputtedTopping;
+    newPizza.cost();
+
+    $('.total').text(newPizza.price);
+    $('#order_confirmation').show();
+  });
+});
