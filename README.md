@@ -5,7 +5,6 @@ Kyle Giard-Chase
 April 17 2015
 
 
-
 ##Description
 An app that calculates the cost for a pizza pie based on toppings.
 
@@ -17,8 +16,10 @@ Javascript <br>
 
 
 ##Use and Editing
-To use the app, clone the repository. In the top level of the project folder, click on index.html and open it in your web browser.<br><br>
-To edit the app, you will need jQuery, as well as Mocha and Chai to run BDD tests. These libraries are already located in the js and specs folders, respectively. <br><br>
+To use the app, <br>
+1. Clone the repository `git clone https://github.com/k-giardchase/pizza.git` <br>
+2. Change directory into the folder `cd pizza` <br>
+3. Open index.html in your web browser.
 
 
 ##Copyright (c) 2015 Kyle Giard-Chase
